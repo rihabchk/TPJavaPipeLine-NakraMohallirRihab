@@ -9,7 +9,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/rihabchk/TPJavaPipeline-NakraMohallirRihab.git'
+                git 'https://github.com/rihabchk/TPJavaPipeLine-NakraMohallirRihab.git'
             }
         }
 
