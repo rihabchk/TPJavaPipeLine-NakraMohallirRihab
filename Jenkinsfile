@@ -4,7 +4,9 @@ pipeline {
     tools {
         maven 'Maven3'
     }
+
     stages {
+
         stage('Clone') {
             steps {
                 git 'https://github.com/rihabchk/TPJavaPipeline-NakraMohallirRihab.git'
@@ -15,11 +17,13 @@ pipeline {
             steps {
                 sh 'mvn clean install'
             }
+        }
 
         stage('Test') {
             steps {
                 sh 'mvn test'
             }
         }
+
     }
 }
